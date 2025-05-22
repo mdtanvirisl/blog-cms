@@ -1,6 +1,29 @@
 <?php
-// blog.php
+require_once __DIR__.'/core/LH/RequestHandler.php';
+require_once __DIR__.'/core/LH/Models/Blog.php';
+
+use LH\RequestHandler;
+use LH\Models\Blog;
+
+$request = new RequestHandler();
+$blog = new Blog();
+
+// Get blog ID from URL
+$blogId = $request->getRequest('id');
+
+if (!$blogId || !is_numeric($blogId)) {
+    echo "Invalid blog ID.";
+    exit;
+}
+
+$post = $blog->getPostById($blogId);
+
+if (!$post) {
+    echo "Blog post not found.";
+    exit;
+}
 ?>
+
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
@@ -23,35 +46,31 @@
  <body class="bg-[#F9FAFB] text-[#111827]">
   <div class="max-w-[900px] mx-auto px-4 py-6">
    <?php include 'header.php'; ?>
-   <!-- Back link -->
-   <div class="flex items-center space-x-2 text-xs text-[#6B7280] mb-4 cursor-pointer select-none">
+
+   <a href="index.php" class="flex items-center space-x-2 text-xs text-[#6B7280] mb-4 hover:text-[#111827]">
     <i class="fas fa-arrow-left">
     </i>
     <span>
      Back to blog list
     </span>
-   </div>
-   <!-- Hero Image -->
-   <img alt="Futuristic image of a person with digital interface overlays representing AI in website design" class="w-full rounded-md mb-6 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/ce5d11e8-5a1b-443c-27f0-96da0988674b.jpg" width="900"/>
-   <!-- Title -->
+   </a>
+
+    <img alt="<?= htmlspecialchars($post['title']) ?>" class="w-full rounded-md mb-6 object-cover" height="100" src="<?= htmlspecialchars($post['image']) ?>" width="900"/>
+
    <h1 class="text-base font-normal text-[#111827] mb-1 leading-tight">
-    How AI Is Transforming Website Design And User Experience (UX)
+    <?= htmlspecialchars($post['title']) ?>
    </h1>
-   <!-- Author and date -->
+
    <p class="text-[9px] text-[#6B7280] mb-6 font-normal">
-    Written by John doe | May 14, 2025
+    Written by Admin | <?= date("F j, Y", strtotime($post['created_at'])) ?>
    </p>
-   <!-- Article content -->
+
    <article class="prose prose-sm max-w-none text-[#374151]">
     <p>
-     Artificial Intelligence (AI) is rapidly transforming how websites are
-        designed. Today, businesses rely on AI in websites and UX design to
-        precisely target users, understand their behavior, and boost
-        engagement. AI in UX is the norm today to come up with website designs
-        that precisely target a specific audience.
+     <?= nl2br(htmlspecialchars($post['description'])) ?>
     </p>
    </article>
-   <!-- Footer -->
+
     <?php include 'footer.php'; ?>
   </div>
  </body>

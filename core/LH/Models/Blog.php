@@ -1,6 +1,8 @@
 <?php
 namespace LH\Models;
 
+require_once __DIR__.'/../Database.php';
+
 use LH\Database;
 use PDO;
 

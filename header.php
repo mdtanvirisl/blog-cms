@@ -32,7 +32,8 @@
             BLOG
             </span>
         </div>
-        <button class="bg-purple-700 text-white text-xs font-semibold px-4 py-1 rounded-md hover:bg-purple-800 transition" type="button">
+        <button class="bg-purple-700 text-white text-xs font-semibold px-4 py-1 rounded-md hover:bg-purple-800 transition" type="button" 
+        onclick="window.location.href='admin/login.php';">
         Admin panel
         </button>
    </div>
