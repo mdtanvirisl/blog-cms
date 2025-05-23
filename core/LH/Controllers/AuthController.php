@@ -19,10 +19,10 @@ class AuthController {
         return isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
     }
 
-    public function logout(): void {
-        session_destroy();
-        header('Location: login.php');
-        exit;
-    }
+    // public function logout(): void {
+    //     session_destroy();
+    //     header('Location: login.php');
+    //     exit;
+    // }
 }
 

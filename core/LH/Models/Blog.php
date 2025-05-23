@@ -33,13 +33,13 @@ class Blog {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    // public function createPost($title, $desc, $img) {
-    //     $stmt = $this->db->prepare("INSERT INTO blogs (title, description, image) VALUES (?, ?, ?)");
-    //     return $stmt->execute([$title, $desc, $img]);
-    // }
+    public function createPost($title, $desc, $img) {
+        $stmt = $this->db->prepare("INSERT INTO blogs (title, description, image) VALUES (?, ?, ?)");
+        return $stmt->execute([$title, $desc, $img]);
+    }
 
-    // public function deletePost($id) {
-    //     $stmt = $this->db->prepare("DELETE FROM blogs WHERE id = ?");
-    //     return $stmt->execute([$id]);
-    // }
+    public function deletePost($id) {
+        $stmt = $this->db->prepare("DELETE FROM blogs WHERE id = ?");
+        return $stmt->execute([$id]);
+    }
 }

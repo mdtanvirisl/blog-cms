@@ -22,7 +22,7 @@ class RequestHandler {
         if (!$this->validateImage($file)) return false;
         $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
         $newName = pathinfo($file['name'], PATHINFO_FILENAME) . '_' . date('YmdHis') . '.' . $ext;
-        move_uploaded_file($file['tmp_name'], 'uploads/' . $newName);
+        move_uploaded_file($file['tmp_name'], '../uploads/' . $newName);
         return $newName;
     }
 }
