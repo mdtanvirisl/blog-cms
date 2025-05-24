@@ -4,10 +4,6 @@ A lightweight Blog CMS built with OOP PHP, MySQL, and TailwindCSS. This project 
 
 ---
 
-## 🚀 Live Demo
-
-> *(Add your demo link here, if available)*
-
 ---
 
 ## 📁 Features Overview
@@ -113,7 +109,13 @@ A lightweight Blog CMS built with OOP PHP, MySQL, and TailwindCSS. This project 
 ---
 
 ## 📷 Screenshots
-> *(Add screenshots or sample image previews here if possible)*
+<img width="1318" alt="Image" src="https://github.com/user-attachments/assets/8f3cedaf-6577-4564-b09f-88a29cf19923" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/e63bf8f7-f974-45e1-9f5a-9d5cc5fae0a2" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/bf0de59a-90f8-4bda-914f-b4a8f6cd01ff" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/05d680b2-daae-4b37-995f-5338fb7f8bc0" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/98b691fd-8944-47a8-a12b-d91af31bfef2" />
+<img width="1469" alt="Image" src="https://github.com/user-attachments/assets/bb0fc07b-b667-4cbc-b6da-99b3db721500" />
+
 
 ---
 
