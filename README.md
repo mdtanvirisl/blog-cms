@@ -8,7 +8,7 @@ A lightweight Blog CMS built with OOP PHP, MySQL, and TailwindCSS. This project 
 
 ## 📁 Features Overview
 
-### 🌐 Frontend (Public Pages)
+### 🌐 Frontend (Pages)
 - ✅ Responsive top navigation
 - ✅ Blog List page (`index.php`)
   - Featured image
