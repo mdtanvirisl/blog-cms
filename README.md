@@ -31,7 +31,7 @@ A lightweight Blog CMS built with OOP PHP, MySQL, and TailwindCSS. This project 
   - Featured image (jpg/jpeg/png)
 - 🔁 Edit Post *(in progress)*
 - ❌ Delete via AJAX *(in progress)*
-- ✅ Settings – Configure number of posts per page(not completed {can't write the txt file})
+- ✅ Settings – Configure number of posts per page(in progress)
 
 ---
 
@@ -92,48 +92,49 @@ A lightweight Blog CMS built with OOP PHP, MySQL, and TailwindCSS. This project 
 ---
 
 ## ✅ Completed
-- [x] TailwindCSS styling
-- [x] Mobile-first & semantic HTML
-- [x] Blog listing with pagination
-- [x] Single blog view
-- [x] Admin login with session
-- [x] Create post with image upload
-- [x] Settings page for posts per page
+- [ ] TailwindCSS styling
+- [ ] Mobile-first & semantic HTML
+- [ ] Blog listing with pagination
+- [ ] Single blog view
+- [ ] Admin login with session
+- [ ] Create post with image upload
+- [ ] Settings page for posts per page
+- [ ] dashboard with title and edit/delete button
+- [ ] edit post page with pre filled field
 
 ---
 
 ## 🚧 In Progress
 - [ ] Edit post backend logic
 - [ ] AJAX delete with confirmation
+- [ ] Settings for page control
 
 ---
 
 ## 📷 Screenshots
-<img width="1318" alt="Image" src="https://github.com/user-attachments/assets/8f3cedaf-6577-4564-b09f-88a29cf19923" />
-<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/e63bf8f7-f974-45e1-9f5a-9d5cc5fae0a2" />
-<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/bf0de59a-90f8-4bda-914f-b4a8f6cd01ff" />
-<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/05d680b2-daae-4b37-995f-5338fb7f8bc0" />
-<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/98b691fd-8944-47a8-a12b-d91af31bfef2" />
 <img width="1469" alt="Image" src="https://github.com/user-attachments/assets/bb0fc07b-b667-4cbc-b6da-99b3db721500" />
+<img width="1318" alt="Image" src="https://github.com/user-attachments/assets/8f3cedaf-6577-4564-b09f-88a29cf19923" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/98b691fd-8944-47a8-a12b-d91af31bfef2" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/4d695a64-8475-4ce9-b530-f95457e95165" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/05d680b2-daae-4b37-995f-5338fb7f8bc0" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/bf0de59a-90f8-4bda-914f-b4a8f6cd01ff" />
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/e63bf8f7-f974-45e1-9f5a-9d5cc5fae0a2" />
 
 
 ---
 
 ## 📜 License
-This project is for **educational/internship** purposes. Feel free to reuse the structure with proper attribution.
-
+This project is for **educational/internship** purposes.
 ---
 
 ## 🙋‍♂️ Author
 
-- **Name:** *(Your Name)*
+- **Name:** *(MD. Tanvir Islam)*
 - **Intern Position:** PHP Intern @ Lemon Hive
-- **GitHub:** [YourGitHubUsername](https://github.com/YourGitHubUsername)
 
 ---
 
 ## 📬 Submission
 
-✅ Task completed as per requirements  
-🔗 [GitHub Repository Link](https://github.com/your-repo)
+✅ Task completed as per requirements
 
