@@ -5,7 +5,7 @@ use LH\Models\Blog;
 
 $blog = new Blog();
 
-$postsPerPage = 5;
+$postsPerPage = 8;
 if (file_exists(__DIR__ . '/admin/posts_per_page.txt')) {
     $postsPerPage = (int) file_get_contents(__DIR__ . '/admin/posts_per_page.txt');
 }

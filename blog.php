@@ -55,7 +55,7 @@ if (!$post) {
     </span>
    </a>
 
-    <img alt="<?= htmlspecialchars($post['title']) ?>" class="w-full rounded-md mb-6 object-cover" height="100" src="<?= htmlspecialchars($post['image']) ?>" width="900"/>
+    <img alt="<?= htmlspecialchars($post['title']) ?>" class="w-full rounded-md mb-6 object-cover" height="100" src="uploads/<?= htmlspecialchars($post['image']) ?>" width="900"/>
 
    <h1 class="text-base font-normal text-[#111827] mb-1 leading-tight">
     <?= htmlspecialchars($post['title']) ?>

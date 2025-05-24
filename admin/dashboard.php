@@ -161,7 +161,6 @@ $posts = $blog->getAllPosts($postsPerPage, $offset);
 
     <!--Edit Modal backdrop -->
     <div class="fixed inset-0 bg-black bg-opacity-30 hidden" id="modalBackdrop" tabindex="-1"></div>
-    <!-- Modal -->
     <div aria-labelledby="editPostTitle" aria-modal="true"
         class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md shadow-lg w-[320px] p-6 z-20 hidden"
         id="editModal" role="dialog">

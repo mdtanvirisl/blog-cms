@@ -1,5 +1,5 @@
 <?php
-
+// require_once __DIR__ . '/../core/LH/Controllers/SettingsController.php';
 ?>
 
 
@@ -32,7 +32,22 @@
             </i>
             Back to dashboard
         </a>
-        <form class="flex flex-wrap items-center space-x-4">
+        
+        <?php if (isset($_GET['success'])): ?>
+            <div class="mb-4 text-green-600">Settings saved successfully!</div>
+        <?php elseif (isset($_GET['error'])): ?>
+            <div class="mb-4 text-red-600">
+                <?php
+                if ($_GET['error'] == 1) {
+                    echo "Please enter a valid number of posts per page.";
+                } elseif ($_GET['error'] == 2) {
+                    echo "Error writing to the settings file.";
+                }
+                ?>
+            </div>
+        <?php endif; ?>
+
+        <form action="../core/LH/Controllers/SettingsController.php" method="POST" class="flex flex-wrap items-center space-x-4">
             <div class="flex flex-col w-full max-w-[200px]">
                 <label class="text-sm font-semibold text-gray-900 block w-full sm:w-auto mb-2 sm:mb-0"
                     for="postsPerPage">
@@ -40,9 +55,9 @@
                 </label>
                 <input autocomplete="off"
                     class="border border-gray-300 rounded-md px-3 py-2 text-xs text-gray-500 w-full max-w-[200px]"
-                    id="postsPerPage" placeholder="0" type="text" value="" />
+                    id="postsPerPage" name="postsPerPage" placeholder="0" type="text" value="" />
             </div>
-            <button class="bg-purple-600 text-white text-xs font-medium px-4 py-2 rounded-md" type="submit">
+            <button class="bg-purple-600 text-white text-xs font-medium px-4 py-2 rounded-md self-end" type="submit">
                 Save
             </button>
         </form>
